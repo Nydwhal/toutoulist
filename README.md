@@ -1,27 +1,38 @@
-# Toutoulist
+# Toutoulist - TP Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+## Problèmes rencontrés:
 
-## Development server
+J'ai mis beaucoup de temps à trouver la solution pour générer dynamiquement des composants dans mon template. Je pensais qu'il fallait utiliser des librairies spéciales donc je me suis un peu perdus. C'est un peu tardivement que j'ai trouvé la solution simple de l'utilisation de `ngFor`. Finalement j'ai fini par comprendre le fonctionnement et il me manquait juste un peu de temps pour faire le compte rendu ainsi qu'appliquer les styles que j'ai zappé pour prioriser la logique angular.
+## Sujet :
+### Brief :
+Les vacances approchent, il est temps de vous trouver un job étudiant afin
+de pouvoir bien en profiter. Par chance, en allant chercher votre pain, vous
+apercevez une annonce sur la vitrine de la boulangerie :
+« Cherche promeneur de chiens ».
+Ce travail nécessite une grande organisation, il faut répondre aux besoins et
+habitudes de chacune de ces petites boules de poils (exemple : amener
+Daniel, le dalmatien au parc vers 9h du matin, sur la route, passer chercher
+Raphy, le border collie. Une fois au parc, Daniel doit se baigner dans le lac.
+Après sa baignade, il doit être brossé et prendre son traitement, etc). Vous
+pourriez vite vous retrouver débordée et oublier quelque chose !
+Objectif :
+Réaliser une application permettant de lister les différentes tâches à effectuer
+durant les promenades de chiens. La liste doit pouvoir être modifiée à tout
+moment. Chaque tache comporte deux états : A faire / Fait. Un bouton doit
+vous permettre de générer le compt
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Objectif
+Réaliser une application permettant de lister les différentes tâches à effectuer
+durant les promenades de chiens. La liste doit pouvoir être modifiée à tout
+moment. Chaque tache comporte deux états : A faire / Fait. Un bouton doit
+vous permettre de générer le compte-rendu de la promenade aux
+propriétaires
 
-## Code scaffolding
+### Fonctionnalités :
+- Ajouter une tache
+- Modifier une tache
+- Changer l’état d’une tache
+- Supprimer une tache
+- Générer un compte-rendu
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
