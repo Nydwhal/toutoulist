@@ -1,0 +1,29 @@
+<div class="title-my-tasks">
+  <h1>Mes tâches :</h1>
+</div>
+<div>
+  <h3>Ajouter une tâche :</h3>
+  <input type="text" placeholder="Description" [(ngModel)]="description" />
+  <button (click)="addTask()">Ajouter tâche</button>
+</div>
+<div>
+  <h3>Liste des tâches</h3>
+  <div *ngFor="let task of tasks">
+    <div [id]="'task'+task.taskId">
+      <app-task
+        [taskId]="task.taskId"
+        [description]="task.description"
+      ></app-task>
+      <button (click)="changeDescription('block')">Modifier tâche</button>
+      <button (click)="removeTask(task.taskId)">Supprimer tâche</button>
+      <div [style.display]="display">
+        <input
+          type="text"
+          [(ngModel)]="task.description"
+          [style.display]="display"
+        />
+        <button (click)="changeDescription('none')">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
